@@ -27,6 +27,7 @@ defmodule Column.MixProject do
       # Dialyzer
       dialyzer: [
         plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
+        ignore_warnings: ".dialyzer_ignore.exs",
         plt_add_apps: [:mix],
         flags: [:error_handling, :underspecs]
       ],
